@@ -35,7 +35,7 @@ overlay.addEventListener("click", function () {
 const waitLoad = function (parentEL) {
   const markup = ` <div class="spinner">
           <svg>
-            <use href="icons.svg#icon-loader"></use>
+            <use href="./image/icons.svg#icon-loader"></use>
           </svg>
         </div> `;
 
@@ -86,7 +86,7 @@ const showRecipe = async function () {
         <div class="recipe__details">
           <div class="recipe__info">
             <svg class="recipe__info-icon">
-              <use href="icons.svg#icon-clock"></use>
+              <use href="./image/icons.svg#icon-clock"></use>
             </svg>
             <span class="recipe__info-data recipe__info-data--minutes">${
               recipe.cookingTime
@@ -95,7 +95,7 @@ const showRecipe = async function () {
           </div>
           <div class="recipe__info">
             <svg class="recipe__info-icon">
-              <use href="icons.svg#icon-users"></use>
+              <use href="./image/icons.svg#icon-users"></use>
             </svg>
             <span class="recipe__info-data recipe__info-data--people">${
               recipe.servings
@@ -108,7 +108,7 @@ const showRecipe = async function () {
           
           <button class="btn--round btn--bookmark">
             <svg class="">
-              <use href="icons.svg#icon-bookmark"></use>
+              <use href="./image/icons.svg#icon-bookmark"></use>
             </svg>
           </button>
         </div>
@@ -121,7 +121,7 @@ const showRecipe = async function () {
               return `
               <li class="recipe__ingredient">
               <svg class="recipe__icon">
-                <use href="icons.svg#icon-check"></use>
+                <use href="./image/icons.svg#icon-check"></use>
               </svg>
               <div class="recipe__quantity">${ing.quantity}</div>
               <div class="recipe__description">
@@ -149,7 +149,7 @@ const showRecipe = async function () {
             target="_blank">
             <span>Directions</span>
             <svg class="search__icon">
-              <use href="icons.svg#icon-arrow-right"></use>
+              <use href="./image/icons.svg#icon-arrow-right"></use>
             </svg>
           </a>
         </div>`;
@@ -168,7 +168,7 @@ function renderError(
   const markup = `<div class="error">
             <div>
               <svg>
-                <use href="icons.svg#icon-alert-triangle"></use>
+                <use href="./image/icons.svg#icon-alert-triangle"></use>
               </svg>
             </div>
             <p>${message}</p>
